@@ -20,6 +20,5 @@ namespace CardLib
         Jack,
         Queen,
         King
-
     }
 }

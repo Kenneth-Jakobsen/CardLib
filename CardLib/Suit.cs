@@ -7,7 +7,7 @@ namespace CardLib
 {
     public enum Suit
     {
-        Cub,
+        Club,
         Diamond,
         Heart,
         Spade
