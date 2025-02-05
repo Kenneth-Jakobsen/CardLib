@@ -5,5 +5,6 @@ myDeck.Shuffle();
 
 for (int i = 0; i < 52; i++)
 {
-    Card tempCard = myDeck.GetCard(i); 
+    Card tempCard = myDeck.GetCard(i);
+    Console.WriteLine(tempCard);
 }

@@ -9,7 +9,7 @@
             cards = new Card[52];
             for (int suitVal = 0; suitVal < 4; suitVal++)
             {
-                for (int rankVal = 1; rankVal < 13; rankVal++)
+                for (int rankVal = 1; rankVal < 14; rankVal++)
                 {
                     cards[suitVal * 13 + rankVal - 1] = new Card((Suit)suitVal, (Rank)rankVal);
                 }
