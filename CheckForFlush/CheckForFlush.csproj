@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CardLib\CardLib\CardLib.csproj" />
+    <ProjectReference Include="..\..\..\..\Desktop\Beginning C# and .Net\CardLib\CardLib\CardLib\CardLib.csproj" />
   </ItemGroup>
 
 </Project>
