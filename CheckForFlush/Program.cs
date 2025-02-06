@@ -3,10 +3,11 @@ using CardLib;
 
 Deck myDeck = new Deck();
 myDeck.Shuffle();
-Card[] myHand = new Card[5];
+Card[] hand = new Card[5];
 
 
 DrawFiveCards(myDeck);
+Flush(hand);
 
 
  void DrawFiveCards(Deck deck)
@@ -15,8 +16,19 @@ DrawFiveCards(myDeck);
     for (int i = 0; i < 5; i++)
     {
         Card myCard = deck.GetCard(i);
-        myHand[i] = myCard;
-        Console.WriteLine(myHand[i]);
+        hand[i] = myCard;
+        Console.WriteLine(hand[i]);
     }
 }
 
+ void Flush(Card[] myhand)
+ {
+     if(myhand.Any(elem => elem.suit != myhand[0].suit))
+     {
+         Console.WriteLine("No flush");
+     }
+     else
+     {
+         Console.WriteLine("Flush");
+     }
+ }
